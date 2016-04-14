@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="WordSection1">
+<h2><span style="color: #6600ff;">CS162 Lab 4 Personal Organizer Version 3 </span></h2>
+<h3><i><span style="color: red;">Do-Not List for All Labs in CS162: </span></i></h3>
+<ul type="disc">
+<li class="MsoNormal"><span>No Global Variables (you can have global constants)</span></li>
+<li class="MsoNormal"><span>No use of the <span class="SpellE">stdio</span> library (use <span class="SpellE">iostream</span> and <span class="SpellE">fstream</span>)</span></li>
+<li class="MsoNormal"><span>Instead of the string class, you will be using arrays of characters and the <span class="SpellE">cstring</span> library</span></li>
+</ul>
+<h3><i><span style="color: lime;">Things You Should Do: </span></i></h3>
+<ul type="disc">
+<li class="MsoNormal"><span>Follow the style guide for this class </span></li>
+<li class="MsoNormal"><span>Your programs should always guard against bad data being entered by mistake</span></li>
+<li class="MsoNormal"><span>You can always do more than the assignments require</span></li>
+</ul>
+<h3><span style="color: #6600ff;">Goals for This Lab:</span></h3>
+<ul type="disc">
+<li class="MsoNormal"><span>More about class and OOP </span></li>
+<li class="MsoNormal"><span>Using pointers and dynamic memory; focusing on dynamic arrays. </span></li>
+<li class="MsoNormal"><span>Using memory leak detection tool </span></li>
+</ul>
+<h3><span style="color: #6600ff;">Problem You Need to Solve for This Lab: (Same as Lab 2) </span></h3>
+<p>You have noticed that there is a lot to do this term as we get familiar with C++ and programming on a larger scale. With a full load of classes, you may have many due dates to meet. Keeping track of everything is important. You have decided to write a program that reads tasks from the user and saves them in a data file to keep track of.</p>
+<h3><span style="color: #6600ff;">What Your Program Should Do: (Same as Lab 2) </span></h3>
+<p class="MsoNormal"><span>Write an interactive text based menu interface (using a loop) that will allow the user to </span></p>
+<ul type="disc">
+<li class="MsoNormal"><span>Enter a task or assignment</span></li>
+<li class="MsoNormal"><span>Display all of the tasks that are in the file</span></li>
+<li class="MsoNormal"><span>Find a task by Course </span></li>
+<li class="MsoNormal"><span>Quit</span></li>
+</ul>
+<p>For each task, you need to keep track of:</p>
+<ul type="disc">
+<li class="MsoNormal"><span>Course Name that it is for (e.g., CS162)</span></li>
+<li class="MsoNormal"><span>Description of the assignment (e.g., Finish Lab 2)</span></li>
+<li class="MsoNormal"><span>Due date (e.g., 9/26/2009) </span></li>
+</ul>
+<p>Allow the program to keep looping until user wants to quit. When the program starts, it should load the tasks from external file (<span class="style61">&quot;tasks.txt&quot;</span>) into memory. When user enters the three items of a task, the program needs to read them in, save them in memory and eventually write them to the external data file (<span class="style61">&quot;tasks.txt&quot;</span>). The file format could look like: (The &#39;;&#39; is used as a delimiter or field <span class="SpellE">seperator</span>.)</p>
+<p class="style1">CS162<span class="GramE">;Finish</span> Lab 2;9/26/2009<br/> CS201;Take Quiz 1;9/28/2009</p>
+<blockquote style="margin-top: 5.0pt;margin-bottom: 5.0pt;">
+<p class="style1">&#160;</p>
+</blockquote>
+<h3><span style="color: #6600ff;">Some Implementation Requirements: (Different from Lab 2 and Lab 3!!!) </span></h3>
+<ol start="1" type="1">
+<li class="MsoNormal"><span>Use <span class="SpellE">structs</span> or class named </span><span class="style61"><span>Task</span></span><span> to model task. You really should think about changing the <span class="SpellE">struct</span> to class if you have not done so in Lab 2. </span></li>
+<li class="MsoNormal"><span>Use class named </span><span class="SpellE"><span class="style61"><span>TaskList</span></span></span><span> to model the collection of tasks.</span></li>
+<li class="MsoNormal"><span>Use <strong><i>dynamic</i></strong> array of </span><span class="style61"><span>Task</span></span><span> to implement </span><span class="SpellE"><span class="style61"><span>TaskList</span></span></span><span>. </span></li>
+<li class="MsoNormal"><span>Use <strong><i>dynamic </i></strong>character array to model the strings in </span><span class="style61"><span>Task, </span></span><span>such as course name, task description and due date. The character array should be the exact size as needed, <span class="SpellE">e.g</span> &quot;CS162&quot; should use <span class="GramE">an</span> <span class="SpellE">charcter</span> array of size 6 including &#39;\0&#39;. </span></li>
+<li class="MsoNormal"><span>Use </span><span class="style61"><span>destructor</span></span><span> to <span class="SpellE">deallocate</span> the dynamic memory for the object. </span></li>
+<li class="MsoNormal"><span>Make sure your program is &quot;memory-leak-free&quot; by using the <a href="http://msdn.microsoft.com/en-us/library/e5ewb1h3(v=vs.80).aspx">memory leak detection tool</a>. Please view the video in the module for detailed instructions about how to enable the tool in your program. </span></li>
+<li class="MsoNormal"><span>When using class, please make sure you encapsulate the data which means make <span class="GramE">all the</span> instance data member</span><span class="style61"><span> private</span></span><span> and provide <span class="SpellE">accessor</span> methods and <span class="SpellE">mutator</span> methods to access and manipulate the data. </span></li>
+</ol>
+<p class="MsoNormal"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span></p>
+<h3><span style="color: #6600ff;">How <span class="GramE">To</span> Submit Your Work:<em> the same as project 1 except you call it project4.tar</em></span></h3>
+</div>
+
+
+<script type="text/javascript">D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.5.3/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

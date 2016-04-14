@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="WordSection1">
+
+<h2 align="center" style="text-align:center;">CS162 Lab 3</h2>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:.75in;text-indent:-.25in;"><span><span>1.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span><span>Given
+the following class declaration:</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span class="SpellE"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;">const</span></span></span><span style="font-family:&quot;Courier New&quot;;"> <span class="SpellE">int</span> MAX_CHAR =
+100;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;">class</span></span><span style="font-family:&quot;Courier New&quot;;"> Student</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;">{</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;">public</span></span><span style="font-family:&quot;Courier New&quot;;">:</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160; </span><span class="GramE">Student(</span><span class="SpellE">const</span> char <span class="SpellE">initId</span>[], float <span class="SpellE">initGpa</span>);</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160; </span><span class="SpellE"><span class="GramE">bool</span></span> <span class="SpellE">isLessThanByID</span>(<span class="SpellE">const</span> Student&amp; <span class="SpellE">aStudent</span>);</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160; </span><span class="SpellE"><span class="GramE">bool</span></span> <span class="SpellE">isLessThanByGpa</span>(<span class="SpellE">const</span> Student&amp; <span class="SpellE">aStudent</span>);</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160;
+</span>…</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160; </span></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;">private</span></span><span style="font-family:&quot;Courier New&quot;;">:</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160; </span><span class="GramE">char</span><span> </span>id[MAX_CHAR];</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160; </span><span class="GramE">float</span><span> </span><span class="SpellE">gpa</span>;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;">};</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>Implement the following
+functions:</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;">Student::<span class="GramE">Student(</span><span class="SpellE">const</span> char <span class="SpellE">initId</span>[], float <span class="SpellE">initGpa</span>);</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>The above function initializes
+student id with “<span class="SpellE">initId</span>” and <span class="SpellE"><span class="GramE">gpa</span></span> with “<span class="SpellE">initGpa</span>.”</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>&#160;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span class="SpellE"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;">bool</span></span></span><span style="font-family:&quot;Courier New&quot;;"> Student::<span class="SpellE">isLessThanByID</span>(<span class="SpellE">const</span> Student&amp; <span class="SpellE">aStudent</span>);</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>The above function compares
+the student’s id with the id of “<span class="SpellE">aStudent</span>.” It returns
+true if the student’s id comes before the id of “<span class="SpellE">aStudent</span>,”
+and false otherwise.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>&#160;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span class="SpellE"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;">bool</span></span></span><span style="font-family:&quot;Courier New&quot;;"> Student::<span class="SpellE">isLessThanByGpa</span>(<span class="SpellE">const</span> Student&amp; <span class="SpellE">aStudent</span>);</span><span></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>The above function compares
+the student’s <span class="SpellE"><span class="GramE">gpa</span></span> with the <span class="SpellE">gpa</span> of “<span class="SpellE">aStudent</span>.” It returns
+true if the student’s <span class="SpellE"><span class="GramE">gpa</span></span> is
+lower than the <span class="SpellE">gpa</span> of “<span class="SpellE">aStudent</span>,”
+and false otherwise.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>&#160;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;text-indent:-.25in;"><span><span>2.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span><span>Write
+driver program and design test cases to test the functions.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>&#160;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:.75in;text-indent:-.25in;"><span><span>3.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span><span>Copy/paste
+the functions you implement in step 1 into a plain text file, lab3.txt (you can
+use notepad for this) and upload it into lab 3 <span class="SpellE">dropbox</span>.
+For submission please only copy/paste the required function(s), but it’s your
+responsibility to write driver code and test it thoroughly before uploading the
+text file.</span></p>
+
+</div>
+
+
+
+
+<script type="text/javascript">D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.5.3/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

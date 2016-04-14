@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="WordSection1">
+
+<h2 align="center" style="text-align:center;">CS162 Lab 5</h2>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:.75in;text-indent:-.25in;"><span><span>1.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span><span>Given
+the following <span class="SpellE">struct</span> declaration:</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span class="SpellE"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;">struct</span></span></span><span style="font-family:&quot;Courier New&quot;;"> Student</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;">{</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160; </span><span class="GramE">char</span> * <span>&#160;&#160;&#160; </span>name;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;"><span>&#160;&#160; </span><span class="GramE">float</span><span> </span><span>&#160;&#160;&#160;&#160; </span><span class="SpellE">gpa</span>;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;">};</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;">&#160;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>Implement the following
+functions:</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;">Student * <span class="SpellE"><span class="GramE">createStudent</span></span><span class="GramE">(</span><span class="SpellE">const</span> char name[], float <span class="SpellE">gpa</span>);</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span style="font-family:&quot;Courier New&quot;;">&#160;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>The above function creates
+a Student object dynamically and set its name as the passed in “name” and <span class="SpellE"><span class="GramE">gpa</span></span> as the passed “<span class="SpellE">gpa</span>.” When allocating memory for name part of the Student
+object, make sure it uses just enough number of chars, e.g. <span>&#160;</span><span class="GramE">the</span> code should
+allocate 5 chars for “Emma” The function returns a pointer to the newly created
+Student object.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>&#160;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span class="SpellE"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;">bool</span></span></span><span style="font-family:&quot;Courier New&quot;;"> <span class="SpellE">destroyStudent</span>(Student
+* <span class="SpellE">aStudent</span>);</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>The above function deletes
+the Student object pointed to by “<span class="SpellE">aStudent</span>” and set
+it nullptr. Remember to <span class="SpellE">deallocate</span> all dynamically
+allocated memory. It returns true if the operation is successful and false if “<span class="SpellE">aStudent</span>” contains <span class="SpellE">nullptr</span>.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>&#160;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;text-indent:-.25in;"><span><span>2.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span><span>Write
+driver program and design test cases to test the functions.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;"><span>&#160;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:.75in;text-indent:-.25in;"><span><span>3.<span style="font:7.0pt &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;
+</span></span></span><span>Copy/paste
+the functions you implement in step 1 into a plain text file, lab5.txt (you can
+use notepad for this) and upload it into lab 5 <span class="SpellE">dropbox</span>.
+For submission please only copy/paste the required function(s), but it’s your
+responsibility to write driver code and test it thoroughly before uploading the
+text file.</span></p>
+
+</div>
+
+
+
+
+<script type="text/javascript">D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.5.3/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

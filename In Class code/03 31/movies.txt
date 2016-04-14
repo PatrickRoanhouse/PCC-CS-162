@@ -1,0 +1,5 @@
+The Lion King;ACTION;23
+Happy Feet;COMEDY;15
+Batman vs Superman;ACTION;18
+Robocop;ROMANCE;35
+Silence of the Lambs;FAMILY;8
